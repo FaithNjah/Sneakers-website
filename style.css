@@ -1,0 +1,261 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.main-div{
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(212, 207, 207);
+    margin-bottom: 50px;
+    padding-top: 40px;
+    height: 100px;
+    width:auto;
+}
+
+.left-header ul li {
+    margin: 15px;
+    margin-left: 45px;
+    color: rgb(141, 140, 139);
+    font-size: 17px;
+    position: relative; 
+}
+
+.left-header ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    width: 0; 
+    height: 2px; 
+    background-color: hsl(26, 100%, 55%);
+    transition: width 0.3s ease-in-out;
+}
+
+.left-header ul li:hover::after {
+    width: 100%; /* Expand the width to the full width of the li on hover */
+}
+
+
+.left-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-header-image{
+    margin-top: 30px;
+}
+
+.left-header ul{
+    list-style: none;
+    display: flex;
+    height: 100px;
+}
+
+.left-header ul li{
+    margin: 15px;
+    margin-left: 45px;
+    color: rgb(141, 140, 139);
+    font-size: 17px;
+}
+
+.right-header{
+    display: flex;
+    margin-top: 5px;
+}
+
+
+
+.cart{
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.profile-image {
+    margin-top: 8px; 
+    padding: 4px; 
+}
+
+.profile-image img {
+    border-radius: 50%; 
+    margin-left: 30px;
+    border: 0.5px solid transparent; 
+    transition:0.3s;
+}
+
+.profile-image img:hover {
+    border-color: hsl(26, 100%, 55%);
+}
+
+.cart-content{
+    position: absolute;
+    left: 1210px;
+    background-color: rgb(250, 252, 252);
+    margin-top: -53px;
+    border-radius: 10px;
+    display: none;
+
+    
+    
+}
+
+.cart-content__heading{
+    font-size: 1.6rem;
+    border-bottom: 1px solid var(--grayish-blue);
+    font-weight: 700;
+    margin-top:-50;
+}
+.cart-content__product{
+    padding: 2.4rem;
+    display: flex;
+    align-items: center;
+}
+.cart-content__prod-img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 1.6rem;
+}
+.cart-content__prod-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cart-content__prod-text h6{
+    color: var(--dark-grayish-blue);
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+.cart-content__prod-price{
+    color: var(--dark-grayish-blue);
+    font-size: 1.7rem;
+}
+.cart-content__prod-price span{
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+.cart-content__bin-icon{
+    margin-left: auto;
+    fill: var(--grayish-blue);
+}
+.cart-content__btn{
+    border: none;
+    background-color:hsl(26, 100%, 55%);
+    width: 15rem;
+    height: 3rem;
+    display: block;
+    margin-bottom: 2rem;
+    margin-left: 10rem;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+.body{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.left-body-top img{
+    border-radius:10px;
+}
+
+.left-body-bottom img{
+    margin-right: 39.5px;
+    margin-top: 20px;
+    border-radius:10px;
+    width:80px;
+     height:80px
+}
+
+.right-body{
+    margin-top: 30px;
+}
+.right-body h4{
+    color: hsl(26, 100%, 55%);
+   
+}
+
+.right-body h1{
+    font-size: 40px;
+}
+
+.right-body p{
+    color: rgb(132, 130, 130);
+}
+.actual-price{
+    display: flex;
+}
+
+.actual-price h2{
+    font-size: 35px;
+}
+
+.actual-price h3{
+    margin-top: 38px;
+    margin-left: 20px;
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    height: 24px;
+    width: 40px;
+    padding-left:10px;
+    border-radius: 5px;
+}   
+
+.Price p{
+    margin-top: -10px;
+    text-decoration: line-through;
+    font-size: 20px;
+    color:rgb(189, 184, 184) ;
+}
+
+.button{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.button-one{
+    background-color:rgb(240, 236, 236) ;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.button-one div{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button-two{
+    background-color: hsl(26, 100%, 55%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 220px;
+    height: 60px;
+    border-radius: 10px;
+    
+}
+
+.button-two-cart img{
+    padding-top: 10px;
+    filter: invert(100%);
+}
+
+.button-two p{
+    color: white;
+}
